@@ -5,6 +5,6 @@ This [et_convert.py](et_convert.py) is from the [pywpsrpc official repository](h
 ## Usage
 
 ```shell
-docker build -t xy-wps-xls .
+docker build -t xy-wps-xls:latest .
 docker run --rm -v $(pwd):/app/data xy-wps-xls --format pdf /app/data/test.xls
 ```

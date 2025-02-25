@@ -9,13 +9,13 @@
 ## Usage
 
 ```shell
-docker build -t xy-wps .
+docker build -t xy-wps:latest .
 ```
 
 ### 样例
 
 ```Dockerfile
-FROM akkuman/xy-wps
+FROM xy-wps:latest
 
 RUN apt update && apt install libqt5xml5 python3 python3-pip
 

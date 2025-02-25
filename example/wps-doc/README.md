@@ -5,6 +5,6 @@ This [convertto.py](convertto.py) is from the [pywpsrpc official repository](htt
 ## Usage
 
 ```shell
-docker build -t xy-wps-doc .
+docker build -t xy-wps-doc:latest .
 docker run --rm -v $(pwd):/app/data xy-wps-doc --format pdf /app/data/test.docx
 ```

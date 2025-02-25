@@ -5,6 +5,6 @@ This [wpp_convert.py](wpp_convert.py) is from the [pywpsrpc official repository]
 ## Usage
 
 ```shell
-docker build -t xy-wps-ppt .
+docker build -t xy-wps-ppt:latest .
 docker run --rm -v $(pwd):/app/data xy-wps-ppt --format pdf /app/data/test.ppt
 ```

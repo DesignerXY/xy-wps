@@ -1,4 +1,4 @@
-FROM xy-wps
+FROM xy-wps:latest
 
 ARG DEBIAN_FRONTEND=noninteractive
 
@@ -22,9 +22,6 @@ RUN sed -i "s|http://deb.debian.org/debian|http://mirror.sjtu.edu.cn/debian|g" /
     apt-get clean -y && rm -rf /var/lib/apt/lists/* && \
     # strip --remove-section=.note.ABI-tag /usr/lib64/libQt5Core.so.5
     strip --remove-section=.note.ABI-tag /usr/lib/x86_64-linux-gnu/libQt5Core.so.5
-
-# for chinese font
-#ADD https://raw.githubusercontent.com/StellarCN/scp_zh/master/fonts/SimHei.ttf /usr/share/fonts/
 
 COPY ./requirements.txt ./wpp_convert.py ./entrypoint.sh ./test.ppt /app/
 RUN python3 -m pip install --no-cache-dir -r /app/requirements.txt && \
