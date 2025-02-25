@@ -26,10 +26,8 @@ COPY example.py /root/example.py
 CMD [ "python3", "example.py" ]
 ```
 
-示例：\
-[doc](example/wps-doc)
-\
-[xls](example/wps-xls)
+示例：
+[doc](example/wps-doc)、[xls](example/wps-xls)、[ppt](example/wps-ppt)
 
 ## 参考链接
 
