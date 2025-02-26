@@ -2,9 +2,13 @@
 
 在 docker 环境中使用 [wps](https://linux.wps.cn/)
 
-## 介绍
+## Introduction
 
 该镜像的基础镜像为 `debian:bullseye-slim`
+
+## WPS Software
+
+WPS Linux [下载地址]https://aur.archlinux.org/cgit/aur.git/log/?h=wps-office-cn
 
 ## Usage
 
@@ -12,7 +16,7 @@
 docker build -t xy-wps:latest .
 ```
 
-### 样例
+### Example
 
 ```Dockerfile
 FROM xy-wps:latest
@@ -26,9 +30,12 @@ COPY example.py /root/example.py
 CMD [ "python3", "example.py" ]
 ```
 
-示例：
+Examples：
 [doc](example/wps-doc)、[xls](example/wps-xls)、[ppt](example/wps-ppt)
 
-## 参考链接
+## References
 
 - [pywpsrpc](https://github.com/timxx/pywpsrpc)
+- [headless-wps](https://github.com/akkuman/headless-wps)
+- [wps2pdf](https://github.com/sun-wming/wps2pdf)
+- [WpsToPdf](https://github.com/xlgwr/WpsToPdf)
